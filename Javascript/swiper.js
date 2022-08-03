@@ -11,6 +11,8 @@ const swiper = new Swiper(".swiper1", {
     prevEl: ".swiper-button-prev",
   },
 
+  slidesPerView: 1.1,
+
   // Breakpoints
 
   breakpoints: {
@@ -52,7 +54,7 @@ const swiper2 = new Swiper(".swiper2", {
   // Slides
 
   slidesPerView: 1.5,
-  spaceBetween: 30,
+  spaceBetween: 17,
 
   scrollbar: {
     el: ".swiper-scrollbar",
@@ -105,6 +107,7 @@ const swiper4 = new Swiper(".swiper4", {
   },
 
   // Slides
+  spaceBetween: 5,
 
   // Breakpoints
 

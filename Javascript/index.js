@@ -1,3 +1,15 @@
+let shippingMessageHeight = 37;
+
+window.addEventListener("scroll", () => {
+  if (shippingMessageHeight < window.scrollY) {
+    document.querySelector(".navbar").style.position = "fixed";
+    document.querySelector(".navbar").style.top = 0;
+  } else {
+    document.querySelector(".navbar").style.position = "relative";
+    document.querySelector(".navbar").style.top = shippingMessageHeight;
+  }
+});
+
 // Changing icon in navbar
 
 let element = document.querySelector(".toggle_and_personIcon");

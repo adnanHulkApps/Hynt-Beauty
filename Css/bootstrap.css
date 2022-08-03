@@ -304,6 +304,13 @@ body {
   color: var(--bs-copper) !important;
 }
 
+.section-padding {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+
+
 /* ------------------------------- */
 
 hr {
@@ -6941,7 +6948,7 @@ fieldset:disabled .btn {
 .offcanvas-start {
   top: 0;
   left: 0;
-  width: 400px;
+  width: 320px;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(-100%);
 }
@@ -7941,6 +7948,10 @@ fieldset:disabled .btn {
 
 .mt-2 {
   margin-top: 0.5rem !important;
+}
+
+.mt-20 {
+  margin-top: 1.25rem !important;
 }
 
 .mt-3 {

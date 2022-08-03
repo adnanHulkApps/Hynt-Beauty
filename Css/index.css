@@ -23,6 +23,7 @@ button {
   .shipping_message {
     font-size: 13px;
     letter-spacing: 0.041em;
+    height: 37px;
   }
 
   .shipping_message strong {
@@ -32,7 +33,7 @@ button {
 
 /* Navbar */
 
-.nav {
+.navbar {
   height: 63px;
 }
 
@@ -73,7 +74,7 @@ button {
 /* Offcanvas */
 
 .offcanvas-backdrop.show {
-  margin-top: 100px !important;
+  margin-top: 120px !important;
   opacity: 0.7;
 }
 
@@ -124,7 +125,7 @@ button {
 }
 
 .dropdown-content {
-  top: 30px;
+  top: 50px;
   right: -77px;
   z-index: 3;
   display: none;
@@ -135,6 +136,7 @@ button {
 .dropdown_items {
   font-size: 15px;
   color: black;
+  margin-bottom: 14px;
 }
 
 .dropdown_items:hover {
@@ -144,19 +146,26 @@ button {
 /* Offcanvas Search*/
 
 .offcanvas-top {
-  top: 100px !important;
+  top: 120px !important;
 }
 
 .search_input {
   font-size: 18px !important;
+  left: 0 !important;
 }
 
 .close {
   transform: scale(1.4);
 }
 
-/* Hero section */
+.hide {
+  display: none !important;
+}
 
+/* Hero section */
+.hero_section_text {
+  padding-bottom: 50px;
+}
 @media screen and (min-width: 1200px) {
   .hero_section_text {
     background: transparent;
@@ -179,12 +188,8 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero_paragraph {
-    width: 65%;
-  }
-
   .hero_big_screen {
-    height: 78vh;
+    height: 84vh;
   }
 }
 
@@ -202,13 +207,13 @@ button {
 }
 
 .new {
-  top: 20px !important;
-  left: 30px !important;
+  top: 15px !important;
+  left: 18px !important;
 }
 
 .bestSeller {
-  top: 20px !important;
-  left: 30px !important;
+  top: 15px !important;
+  left: 18px !important;
 }
 
 .description {
@@ -492,4 +497,194 @@ button {
 .swiper-button-next:after {
   width: 35px !important;
   height: 35px !important;
+}
+
+.products_container {
+  padding-top: 59px;
+  padding-bottom: 66px;
+}
+
+.product-wrapper {
+  padding-top: 40px;
+  padding-bottom: 66px;
+}
+
+.nature_science_container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.natural_container {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.natural_paragraph {
+  margin-top: 0.75rem;
+}
+
+.natural_btn {
+  margin-top: 35px;
+}
+
+.natural_mobile_swiper {
+  margin-top: 50px;
+}
+
+.testimonirals_container {
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+
+.testimonial_text {
+  margin-top: 20px;
+}
+
+.glamour_img_div {
+  margin-top: 45px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 40px !important;
+}
+
+.makeup_and_skin_care {
+  padding-top: 84px;
+  padding-bottom: 65px;
+}
+
+.makeup-title {
+  margin-top: 70px;
+}
+
+.makeup-natural {
+  margin-top: 10px;
+}
+
+.makeup-text {
+  margin-top: 12px;
+  padding: 0 20px;
+}
+
+.makeup-learn-btn {
+  margin-top: 35px;
+}
+
+.makeup-commitment-btn {
+  margin-top: 20px;
+}
+
+.background_container {
+  padding-top: 18px;
+}
+
+.changing_subtitle {
+  margin-top: 10px;
+}
+
+.background_btn_container {
+  margin-top: 20px;
+}
+
+.clean_beauty_container {
+  padding-top: 60px;
+  padding-bottom: 5px;
+}
+
+.clean-beauty-text {
+  margin-top: 12px;
+}
+
+.swiper4 {
+  margin-top: 40px;
+}
+
+.footer-subscribe {
+  padding-top: 75px;
+}
+
+.footer-signup {
+  margin-top: 10px;
+}
+
+.input_container {
+  margin-top: 20px;
+}
+
+.social_icons_container {
+  margin-top: 30px;
+}
+
+.links-container {
+  margin-top: 60px;
+}
+
+.footer-link {
+  margin-top: 12px;
+}
+
+.footer_paragraph_container {
+  padding-top: 40px;
+}
+
+.footer_copyright {
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
+.hero_paragraph {
+  margin-top: 20px;
+}
+
+.shop_btn {
+  margin-top: 25px;
+}
+
+.mobile-upper-list {
+  padding: 35px 0 35px 30px;
+}
+
+.mobile-bottom-list {
+  padding: 35px 0 59px 30px;
+}
+
+.mobile_nav_list {
+  margin-bottom: 25px;
+}
+
+.mr-nav {
+  margin-right: 24px;
+}
+
+.dropdown-content {
+  padding: 20px 0 20px 20px;
+}
+
+.search-search {
+  margin-top: 47px;
+  width: 898px;
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar {
+    height: 85px;
+  }
+
+  .hero_big_screen {
+    padding: 0 66px;
+  }
+
+  .hero_paragraph {
+    margin-top: 21px;
+  }
+  .shop_btn {
+    margin-top: 26px;
+  }
+}
+
+@media screen and (min-width: 14400px) {
+  .mr-nav {
+    margin-right: 36px;
+  }
 }
