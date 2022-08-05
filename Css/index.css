@@ -691,6 +691,33 @@ button {
   height: 74.56px;
 }
 
+.makeupImageDiv {
+  z-index: 1;
+}
+
+.makeupImageDiv::before {
+  content: "";
+  position: absolute;
+  background-color: #f8ede7;
+  z-index: -1;
+  top: -40px;
+  left: -5%;
+  width: 50%;
+  height: calc(100% + 80px);
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.makeupImageDiv::after {
+  content: url("../Images/Flower\ Icon.svg");
+  position: absolute;
+
+  z-index: 1;
+  bottom: -50px;
+  left: 0;
+  width: 50%;
+}
+
 @media screen and (min-width: 768px) {
   #faceBtn,
   #eyesBtn,
