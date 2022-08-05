@@ -72,29 +72,6 @@ function iconToggler2() {
   }
 }
 
-// Changing image on hover
-
-let changingImageDiv = document.querySelector("#changing_image_div");
-let image = document.querySelector("#hover_image");
-let colorPalette = document.querySelector("#color_palette_powder");
-let shadesText = document.querySelector("#shades_text_powder");
-let addToBagButton = document.querySelector(".addToBag");
-let width = window.innerWidth;
-
-changingImageDiv.addEventListener("mouseover", function () {
-  image.removeAttribute("src");
-  image.setAttribute("src", "./Images/altoMatteHoverImage.png");
-  colorPalette.classList.remove("d-xl-none");
-  shadesText.classList.remove("d-xl-block");
-});
-
-changingImageDiv.addEventListener("mouseout", function () {
-  image.removeAttribute("src");
-  image.setAttribute("src", "./Images/altoMattePowderBlush.png");
-  colorPalette.classList.add("d-xl-none");
-  shadesText.classList.add("d-xl-block");
-});
-
 // Changing image on hover 2
 
 let smallImage = document.querySelector("#small_background_img");

@@ -195,6 +195,10 @@ button {
 
 /* Scrolling text */
 
+.m-30 {
+  margin-right: 30px;
+}
+
 /* Swiper */
 
 .swiper-slide {
@@ -323,6 +327,14 @@ button {
 .swiper-slide:hover > .addToBag {
   opacity: 1;
   bottom: -60px;
+}
+
+#changing_image_div:hover > .products_img > #altoDefaultImage {
+  display: none !important;
+}
+
+#changing_image_div:hover > .products_img > #hoverImage {
+  display: block !important;
 }
 
 /* Nature meets Science */
@@ -542,6 +554,8 @@ button {
 .makeup_and_skin_care {
   padding-top: 84px;
   padding-bottom: 65px;
+  padding-left: 37px;
+  padding-right: 18px;
 }
 
 .makeup-title {
@@ -701,7 +715,7 @@ button {
   background-color: #f8ede7;
   z-index: -1;
   top: -40px;
-  left: -5%;
+  left: -8px;
   width: 50%;
   height: calc(100% + 80px);
   border-top-right-radius: 50px;
@@ -709,13 +723,16 @@ button {
 }
 
 .makeupImageDiv::after {
-  content: url("../Images/Flower\ Icon.svg");
+  background-image: url("/Images/Flower\ Icon.svg");
+  background-size: cover;
+  display: inline-block;
   position: absolute;
-
+  content: "";
   z-index: 1;
-  bottom: -50px;
-  left: 0;
-  width: 50%;
+  bottom: -63px;
+  left: -35px;
+  width: 130px;
+  height: 144.63px;
 }
 
 @media screen and (min-width: 768px) {
@@ -744,6 +761,16 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
+  .makeupImageDiv::before {
+    left: -40px;
+  }
+
+  .makeupImageDiv::after {
+    left: -97px;
+    bottom: -125px;
+    width: 234px;
+    height: 260px;
+  }
   .navbar {
     height: 85px;
   }
@@ -798,7 +825,7 @@ button {
   }
 
   .makeup_and_skin_care {
-    padding: 120px 79px;
+    padding: 15px 79px;
   }
   .makeupTextDiv {
     padding-left: 72px;
