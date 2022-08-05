@@ -8,7 +8,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="John Doe" />
     <title>HYNT BEAUTY</title>
-    <link rel="icon" type="image/x-icon" href="./Images/Hynt Logo.svg" />
+    <link rel="icon" type="image/x-icon" href="./Images/logoImage.svg" />
     <link rel="stylesheet" href="./Css/bootstrap.css" />
     <link rel="stylesheet" href="./Css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -314,11 +314,7 @@
         >
           <h1>
             Nature inspired colors.
-            <div
-              id="science_text"
-              class="italic font-bodony h1"
-              style="width: max-content"
-            >
+            <div id="science_text" class="italic font-bodony h1">
               Science powered formulas.
             </div>
           </h1>
@@ -391,7 +387,7 @@
           <!-- Slides -->
 
           <div
-            class="swiper-slide px-2 px-xl-4 position-relative pb-xl-4"
+            class="swiper-slide px-2 px-xl-4 position-relative"
             id="changing_image_div"
           >
             <div class="products_img position-relative bg-alabaster">
@@ -404,6 +400,7 @@
 
               <button
                 class="btn new position-absolute d-flex align-items-center justify-content-center border border-0 badge font-karla"
+                style="height: 25px"
               >
                 New!
               </button>
@@ -412,9 +409,11 @@
               </h6>
             </div>
 
-            <div class="description_and_price d-flex justify-content-between">
+            <div
+              class="description_and_price product-desc align-items-center d-flex justify-content-between"
+            >
               <p class="fw-500">ALTO Matte Powder Blush</p>
-              <p>$29</p>
+              <p class="fw-400">$29</p>
             </div>
             <div
               class="color_palette d-flex mt-1 d-xl-none"
@@ -434,9 +433,17 @@
             >
               Available in 4 shades
             </div>
+            <div class="stars_container">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
 
             <button
               class="btn btn-secondary addToBag position-absolute w-inherit text-center font-karla"
+              style="background: transparent; color: black"
             >
               + ADD TO BAG
             </button>
@@ -455,9 +462,11 @@
               </h6>
             </div>
 
-            <div class="description_and_price d-flex justify-content-between">
+            <div
+              class="description_and_price product-desc align-items-center d-flex justify-content-between"
+            >
               <p class="fw-500">PERFETTO Pressed Eye Shadow</p>
-              <p>$22</p>
+              <p class="fw-400">$22</p>
             </div>
             <div class="color_palette d-flex mt-2 d-xl-none">
               <div class="color5 me-2"></div>
@@ -469,6 +478,13 @@
               class="shades_text d-none d-xl-block mt-2 italic font-karla fw-300"
             >
               Available in 4 shades
+            </div>
+            <div class="stars_container">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
             </div>
           </div>
 
@@ -482,6 +498,7 @@
 
               <button
                 class="btn bestSeller position-absolute d-flex align-items-center justify-content-center badge"
+                style="height: 25px"
               >
                 Best Seller
               </button>
@@ -490,9 +507,11 @@
               </h6>
             </div>
 
-            <div class="description_and_price d-flex justify-content-between">
+            <div
+              class="description_and_price product-desc align-items-center d-flex justify-content-between"
+            >
               <p class="fw-500">FINALE Finishing Powder</p>
-              <p>$59</p>
+              <p class="fw-400">$59</p>
             </div>
             <div class="color_palette d-flex mt-2 d-xl-none">
               <div class="color9 me-2"></div>
@@ -503,6 +522,13 @@
               class="shades_text d-none d-xl-block mt-2 italic font-karla fw-300"
             >
               Available in 4 shades
+            </div>
+            <div class="stars_container">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
             </div>
           </div>
 
@@ -519,9 +545,11 @@
               </h6>
             </div>
 
-            <div class="description_and_price d-flex justify-content-between">
+            <div
+              class="description_and_price product-desc align-items-center d-flex justify-content-between"
+            >
               <p class="fw-500">ENCORE Fine Pressed Powder</p>
-              <p>$45</p>
+              <p class="fw-400">$45</p>
             </div>
             <div class="color_palette d-flex mt-2 d-xl-none">
               <div class="color12 me-2"></div>
@@ -537,15 +565,26 @@
             >
               Available in 4 shades
             </div>
+            <div class="stars_container">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
           </div>
         </div>
 
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev first-prev d-none"></div>
         <div
-          class="swiper-button-next first-next d-flex align-items-center justify-content-center"
+          class="swiper-button-next first-next bg-white d-flex align-items-center justify-content-center"
         >
-          <img src="./Images/arrow-right.svg" alt="" />
+          <img
+            src="./Images/arrow-right.png"
+            alt=""
+            style="transform: rotate(-45deg)"
+          />
         </div>
       </div>
 
@@ -557,30 +596,30 @@
     <div class="nature_science_container d-flex flex-column section-padding">
       <h3 class="text-center">Where nature meets science.</h3>
 
-      <p class="text-center mt-2 d-lg-none fw-300">
+      <p class="text-center nature_text d-lg-none fw-300">
         We use cutting-edge technologies in natural ingredient formulations to
         offer skin-healthy makeup and skincare that’s results-driven yet gentle
         and kind to our earth.
       </p>
 
-      <p class="text-center mt-3 d-none d-lg-block">
+      <p class="text-center nature_text d-none d-lg-block fw-300">
         We use cutting-edge technologies in natural ingredient formulations to
         offer skin-healthy <br />
         makeup and skincare that’s results-driven yet gentle and kind to our
         earth.
       </p>
 
-      <div
-        class="row icon_container d-xl-flex flex-xl-row mt-5 pt-xl-4 px-xl-5"
-      >
-        <div class="col-xl-6 d-flex justify-content-around">
+      <div class="row icon_container d-xl-flex flex-xl-row mx-xl-0">
+        <div
+          class="col-xl-12 d-flex justify-content-between justify-content-md-around justify-content-xl-between p-xl-0"
+        >
           <div
             class="nature_science_img_text d-flex flex-column align-items-center text-center"
           >
             <img
               src="./Images/Grouped Naturally Preserved Icon.svg"
               alt="icon"
-              class="d-block w-100"
+              class="d-block w-100 nature_img"
             />
             <h6 class="mt-3 fw-500">NATURALLY PRESERVED</h6>
           </div>
@@ -590,7 +629,7 @@
             <img
               src="./Images/Grouped Organics icon.svg"
               alt="icon"
-              class="d-block w-100"
+              class="d-block w-100 nature_img"
             />
             <h6 class="mt-3 fw-500">ORGANICS BASED</h6>
           </div>
@@ -600,13 +639,48 @@
             <img
               src="./Images/Grouped Vegan Icon.svg"
               alt="icon"
-              class="w-100 d-block"
+              class="w-100 d-block nature_img"
             />
-            <h6 class="mt-3 fw-500">VEGAN</h6>
+            <h6 class="mt-4 fw-500">VEGAN</h6>
+          </div>
+          <div
+            class="nature_science_img_text nature_second d-none d-xl-flex flex-column align-items-center text-center"
+          >
+            <img
+              src="./Images/Grouped PETA icon.svg"
+              alt="icon"
+              class="d-block w-100 nature_img"
+            />
+            <h6 class="mt-3 fw-500">
+              PETA <br />
+              CRUELTY FREE
+            </h6>
+          </div>
+          <div
+            class="nature_science_img_text d-none d-xl-flex flex-column align-items-center text-center"
+          >
+            <img
+              src="./Images/Grouped Clean and Pure icon.svg"
+              alt="icon"
+              class="d-block w-100 nature_img"
+            />
+            <h6 class="mt-4 fw-500">CLEAN & PURE</h6>
+          </div>
+          <div
+            class="nature_science_img_text d-none d-xl-flex flex-column align-items-center text-center"
+          >
+            <img
+              src="./Images/Grouped Trust and Love icon.svg"
+              alt=""
+              class="d-block w-100 nature_img"
+            />
+            <h6 class="mt-4 fw-500">TRUST & LOVE</h6>
           </div>
         </div>
 
-        <div class="col-xl-6 d-flex justify-content-around mt-5">
+        <div
+          class="nature_second col-xl-6 d-flex justify-content-between justify-content-md-around justify-content-xl-between d-xl-none"
+        >
           <div
             class="nature_science_img_text d-flex flex-column align-items-center text-center"
           >
@@ -628,7 +702,7 @@
               alt="icon"
               class="d-block w-100"
             />
-            <h6 class="mt-3 fw-500">CLEAN & PURE</h6>
+            <h6 class="mt-4 fw-500">CLEAN & PURE</h6>
           </div>
           <div
             class="nature_science_img_text d-flex flex-column align-items-center text-center"
@@ -638,18 +712,18 @@
               alt=""
               class="d-block w-100"
             />
-            <h6 class="mt-3 fw-500">TRUST & LOVE</h6>
+            <h6 class="mt-4 fw-500">TRUST & LOVE</h6>
           </div>
         </div>
       </div>
-      <button class="btn btn-primary mt-5 mx-auto">LEARN MORE</button>
+      <button class="btn btn-primary learn_btn mx-auto">LEARN MORE</button>
     </div>
 
     <!--Natural-->
 
     <div class="natural_container container-fluid bg-alabaster section-padding">
       <div class="row d-lg-flex justify-content-center align-items-center">
-        <div class="natural_text col-lg-4 col-xxl-3">
+        <div class="natural_text col-lg-4 px-lg-0">
           <h2 class="text-center">
             Who said <span class="italic">natural</span>
             <br class="d-none d-xl-block" />
@@ -657,9 +731,15 @@
             to be boring?
           </h2>
 
-          <p class="text-center natural_paragraph">
-            Our ARIA PURE lipsticks are for the bold, <br />
-            the bright & the beautiful. Luxuriously <br />
+          <p class="text-center natural_paragraph d-none d-lg-block">
+            Our ARIA PURE lipsticks are for the bold, the <br />
+            bright & the beautiful. Luxuriously creamy, <br />
+            deliciously hydrating, all packed with good- <br />
+            for-you ingredients.
+          </p>
+          <p class="text-center natural_paragraph d-lg-none">
+            Our ARIA PURE lipsticks are for the bold, the bright & the
+            beautiful. Luxuriously <br />
             creamy, deliciously hydrating, all packed <br />
             with good-for-you ingredients.
           </p>
@@ -669,7 +749,7 @@
           </button>
         </div>
 
-        <div class="natural_mobile_swiper d-lg-none">
+        <div class="natural_mobile_swiper col-lg-8 px-lg-0">
           <div class="swiper swiper2">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper natural_wrapper">
@@ -710,21 +790,6 @@
             <div class="swiper-button-prev second-prev d-none"></div>
             <div class="swiper-button-next second-next d-none"></div>
           </div>
-        </div>
-
-        <div class="col-lg-3 lipstick_img d-none d-lg-block">
-          <img
-            src="./Images/aWomanApplyingLipstick.png"
-            alt="A Woman Applying Lipstick"
-            class="d-block w-100"
-          />
-        </div>
-        <div class="col-lg-3 lipstick_img d-none d-lg-block">
-          <img
-            src="./Images/Lipsticks.png"
-            alt="lipstick photo"
-            class="d-block w-100"
-          />
         </div>
       </div>
     </div>
@@ -797,44 +862,49 @@
       class="container-fluid makeup_and_skin_care bg-alabaster section-padding"
     >
       <div class="row d-xl-flex align-items-center justify-content-xl-center">
-        <div class="makeupImageDiv col-xl-6">
+        <div class="makeupImageDiv col-xl-6 px-xl-0">
           <img
             src="./Images/threeWomenSmiling.png"
             alt="Three Women Smiling"
             class="img-fluid"
           />
         </div>
-        <div class="makeupTextDiv col-xl-6">
+        <div class="makeupTextDiv col-xl-6 pe-xl-0">
           <div class="wrapper mx-auto">
             <h6 class="text-center text-xl-start makeup-title">
-              SKIN-HEALTHY NATURAL MAKEUP & <br />
+              SKIN-HEALTHY NATURAL MAKEUP & <br class="d-lg-none" />
               ADVANCED SKIN CARE
             </h6>
             <h3 class="text-center text-xl-start makeup-natural">
-              Natural beauty brand you can fully
+              Natural beauty brand you can <br class="d-none d-xl-block" />
+              fully
               <span class="italic">trust & love.</span>
             </h3>
 
-            <p class="text-center text-xl-start makeup-text">
+            <p class="text-center text-xl-start makeup-text px-0">
               We employ cutting-edge, clean ingredient technologies as well as
-              certified organic ingredients that are rich in antioxidants,
-              skin-energizing vitamins and peptides to deliver glowing results
-              while being gentle on even the most sensitive skin types. <br />
+              certified <br class="d-none d-xxl-block" />
+              organic ingredients that are rich in antioxidants, skin-energizing
+              vitamins <br class="d-none d-xxl-block" />
+              and peptides to deliver glowing results while being gentle on even
+              the most <br class="d-none d-xxl-block" />
+              sensitive skin types. <br />
               <br />
               We are committed to educating you on how to best support a feeling
-              of healthy, naturally balanced skin, so that you can feel
-              confident and comfortable in your everyday beauty and lifestyle
-              choices.
+              of <br class="d-none d-xxl-block" />
+              healthy, naturally balanced skin, so that you can feel confident
+              and <br class="d-none d-xxl-block" />
+              comfortable in your everyday beauty and lifestyle choices.
             </p>
 
             <div
-              class="w-fit mx-auto d-flex flex-column flex-xl-row align-items-center justify-content-xl-start ms-xl-0"
+              class="w-fit btn_div mx-auto d-flex flex-column flex-xl-row align-items-center justify-content-xl-start ms-xl-0"
             >
               <button class="btn btn-primary mx-auto makeup-learn-btn">
                 LEARN MORE
               </button>
               <button
-                class="btn btn-secondary mt-xl-0 d-flex justify-content-around align-items-center mx-auto sx-xl-0 makeup-commitment-btn"
+                class="btn commitment_btn btn-secondary mt-xl-0 d-flex justify-content-around align-items-center mx-auto sx-xl-0 makeup-commitment-btn mx-xl-0"
               >
                 <img
                   src="./Images/videoPlayIcon.svg"
@@ -861,7 +931,7 @@
         />
 
         <img
-          src="./Images/aWomanApplyingFaceCream.png"
+          src="./Images/aWomanWithLipstickBigScreen.png"
           alt="A Woman Applying Face Cream"
           class="d-block w-100 d-none d-md-block"
           id="big_background_img"
@@ -872,7 +942,7 @@
           <h6 class="text-center">TREAT YOURSELF TODAY.</h6>
 
           <h2 class="text-center mx-auto changing_subtitle">
-            What do you want <br />
+            What do you want <br class="d-md-none" />
             to shop?
           </h2>
 
@@ -888,7 +958,7 @@
                 FACE
               </button>
               <button
-                class="btn btn-light mb-2 ms-2 mb-md-0 ms-md-0 ms-md-2 me-md-2 fw-700"
+                class="btn btn-light mb-2 ms-2 mb-md-0 ms-md-0 fw-700"
                 id="eyesBtn"
                 style="width: 128px; height: 49px"
               >
@@ -905,7 +975,7 @@
                 LIPS
               </button>
               <button
-                class="btn btn-light mt-2 ms-2 mt-md-0 me-md-2 fw-700"
+                class="btn btn-light mt-2 ms-2 ms-md-0 mt-md-0 fw-700"
                 id="skincareBtn"
                 style="width: 128px; height: 49px"
               >
@@ -1012,7 +1082,7 @@
     <!--Footer-->
 
     <div
-      class="footer section-padding d-lg-flex justify-content-lg-around align-items-lg-center bg-footer"
+      class="footer section-padding d-lg-flex justify-content-lg-between px-lg-0 align-items-lg-center bg-footer"
     >
       <div class="subscribe order-lg-2">
         <h5 class="text-center text-lg-start footer-subscribe">Subscribe</h5>
@@ -1021,7 +1091,7 @@
           class="text-center mx-auto text-lg-start mx-lg-0 fw-300 footer-signup"
           id="footer_text"
         >
-          Sign up for our newsletter for our most <br />
+          Sign up for our newsletter for our most <br class="d-md-none" />
           current news, sales, & more!
         </h6>
 
@@ -1131,7 +1201,7 @@
             </li>
           </ul>
 
-          <ul class="list-unstyled ms-5 footer_list">
+          <ul class="list-unstyled footer_list list_customer">
             <li>
               <h5 class="footer_list_title">Customer Care</h5>
             </li>
@@ -1152,8 +1222,8 @@
             </li>
           </ul>
         </div>
-        <div class="second_container ms-sm-5 d-flex">
-          <ul class="list-unstyled footer_list">
+        <div class="second_container d-flex">
+          <ul class="list-unstyled footer_list list_discover">
             <li>
               <h5 class="footer_list_title">Discover</h5>
             </li>

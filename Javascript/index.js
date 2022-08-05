@@ -1,3 +1,5 @@
+// Sticky navbar - removing shipping message
+
 let shippingMessageHeight = 37;
 
 window.addEventListener("scroll", () => {

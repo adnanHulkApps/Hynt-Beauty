@@ -56,6 +56,13 @@ const swiper2 = new Swiper(".swiper2", {
   slidesPerView: 1.5,
   spaceBetween: 17,
 
+  breakpoints: {
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: true,
@@ -107,27 +114,23 @@ const swiper4 = new Swiper(".swiper4", {
   },
 
   // Slides
-  spaceBetween: 5,
 
   // Breakpoints
 
   breakpoints: {
     1200: {
       slidesPerView: 5,
-      spaceBetween: 30,
     },
 
     768: {
       slidesPerView: 2,
-      spaceBetween: 10,
     },
 
     480: {
       slidesPerView: 1,
-      spaceBetween: 10,
     },
   },
-  slidesPerView: 1.5,
+  slidesPerView: 1.3,
   spaceBetween: 5,
   centeredSlides: true,
   loopFillGroupWithBlank: false,
